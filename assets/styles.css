@@ -8,21 +8,90 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+.project > *{
+    flex: 1;
+    margin: 15px;
+}
+.project{
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    display: flex;
+    flex: wrap;
+    text-align: center;
+}
+
+.project h2{
+    width: max-content;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: auto;
+    font-size: 55px;
+}
+
+
+.list{
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list a h2:hover{
+    color:teal;
+}
+.run-buddy {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+}
+.run-buddy a h2{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.run-buddy a h2:hover{
+    font-size: 30px;
+    text-decoration: underline;
+    color: teal;
+}
+.run-buddy:hover{
+    color:teal;
+
+}
+
+.run-buddy img {
+    width: 100%;
+}
+
+
+.text-right{
+    text-align:right;
+    width:auto;
+    padding: 10%;
+}
+
 header {
     padding: 20px 35px;
     background-color:black;
+    color:white;
+    font-weight:bold;
+    font-size: 55px;
+    margin:0;
 }
 
 header h1{
     font-weight:bold;
-    font-size: 36px;
+    font-size: 55px;
     margin:0;
-    display:inline;
-    
-}
-
-header a{
-    color:teal;
+    display: inline-block;
 }
 
 header nav{
@@ -38,6 +107,8 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    text-decoration:none;
+    color:white;
 }
 
 section{
@@ -52,37 +123,141 @@ footer{
 }
 footer h2{
     display:inline;
-    color: teal;
-    font-size: 30px;
+    color: white;
+    font-size: 20px;
     margin: 0;
 }
 
 footer div{
     float:center;
-    line-height: 1.5;
+    line-height: 0.75;
     text-align:center;
 }
 
 .hero{
     background-image: url(../assets/images/portfolio_hero.jpg);
-    height: 300px;
+    height: 500px;
     background-size:cover;
     background-position: center;
-    position:relative;
-    padding-left: 700px;
-    padding-top: 250px;
-    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+    background-attachment: fixed;
 }
 
-.hero p{
+.hero-cta{
+    margin: 5% 0 0 50%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-cta h2{
+    color:white;
+    font-size: 55px;
+    text-align: right;
+}
+
+.hero-cta p{
+    color:gray;
     margin: 5px 0 15px 0;
+    
 }
-
 
 .intro{
-    text-align:left;
+    background-color:beige;
 }
+
+.intro div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.intro > *{
+    flex: 1;
+    margin: 15px;
+}
+
+.intro h2{
+    width: max-content;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: auto;
+    font-size: 55px;
+}
+
+
 .intro p{
-    text-align:right;
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: auto;
+    padding:1%;
+    border-left:4px solid teal;
+    font-weight:lighter
+}
+
+.project div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project > *{
+    flex: 1;
+    margin: 15px;
+}
+
+.project h2{
+    width: max-content;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: auto;
+    font-size: 35px;
+}
+
+
+.contact{
+    background-color:beige;
+}
+
+.contact div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact > *{
+    flex: 1;
+    margin: 15px;
+}
+
+.contact h2{
+    width:max-content;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin: auto;
+    font-size:55px;
+}
+
+.contact ul{
+    width:75%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 1%;
+    margin: auto;
+    border-left: 4px solid teal;
+}
+
+.contact ul li{
+    display:inline-block;
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+    text-decoration:none;
 }
 

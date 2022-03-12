@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -36,4 +37,45 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+
+section{
+    padding: 60px;
+}
+
+footer{
+    background-color:black;
+    width:100%;
+    padding: 40px 35px;
+}
+footer h2{
+    display:inline;
+    color: teal;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div{
+    float:center;
+    line-height: 1.5;
+    text-align:center;
+}
+
+.hero{
+    background-image: url(../assets/images/portfolio_hero.jpg);
+    height: 600px;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+}
+
+.hero p{
+    margin: 5px 0 15px 0;
+}
+
+.intro{
+    text-align:left;
+}
+.intro p{
+    text-align:right;
 }

@@ -23,6 +23,7 @@ header {
 header h1{
     background-color: teal;
     text-shadow: 2px 2px 2px gray;
+    text-align:center;
 
 }
 
@@ -89,14 +90,17 @@ footer h2{
     text-align: center;
     padding:3%;
     font-size:25px;
+    align-items: center;
 
 }
 .intro div{
-    width:100%;
-    margin:auto;
     border-left: 4px solid teal;
-    float:right;
-    text-align:center;
+}
+
+.intro img{
+    height:275px;
+    float:left;
+    margin-right:5%;
 }
 
 .project{
@@ -271,10 +275,22 @@ article{
     footer h2{
         font-size:20px;
     }
+    .intro img{
+        height:350px;
+    }
+    section{
+        padding: 30px 15px;
+    }
 }
 
 @media screen and (max-width: 768px) {
     section{
       padding: 30px 15px;
+    }
+    caption{
+        padding:30px;
+    }
+    .intro img{
+        height:500px,
     }
   }

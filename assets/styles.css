@@ -59,7 +59,8 @@ footer{
 
 .intro p{
     text-align: center;
-    padding:5%;
+    padding:3%;
+    font-size:25px;
 
 }
 .intro div{
@@ -160,6 +161,7 @@ article{
     color:gray;
     flex-wrap: wrap;
 }
+
 .contact{
     display: flex;
     width:100%

@@ -9,11 +9,20 @@ body{
     display:inline-block;
 }
 
+
 header {
     padding: 20px 35px;
-    background-color:black;
-    color:white;
+    color:black;
+    background-color: black;
     display:flex;
+    justify-content: space-between;
+    position:sticky;
+    top:0;
+}
+header h1{
+    background-color: teal;
+    text-shadow: 2px 2px 2px gray;
+
 }
 
 header nav{
@@ -30,7 +39,14 @@ header nav ul li a {
     margin: 0 30px;
     font-size: 22px;
     text-decoration:none;
-    color:white;
+    color:teal;
+    text-shadow: 0.5px 0.5px 0.5px gray;
+}
+
+header nav ul li a:hover{
+    font-size:30px;
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 
@@ -41,11 +57,19 @@ footer{
     color:white;
 }
 
+footer h2{
+    background-color: teal;
+    color: black;
+    margin-left: 15%;
+    margin-right:15%;
+    text-shadow: 2px 2px 2px gray;
+}
 .intro{
-    display:flex;
+    display: flex;
+    width:100%;
 }
 
-.intro header{
+.intro caption{
     background-color: beige;
     color:teal;
     flex-direction: column;
@@ -55,6 +79,9 @@ footer{
 .intro h2{
     text-align: center;
     font-size: 55px;
+    text-shadow: 1px 1px 1px black;
+    color: teal;
+    margin: auto;
 }
 
 .intro p{
@@ -64,23 +91,28 @@ footer{
 
 }
 .intro div{
+    width:100%;
+    margin:auto;
     border-left: 4px solid teal;
+    float:right;
+    text-align:center;
 }
 
 .project{
     display:flex;
 }
 
-.project header{
+.project caption{
     background-color:white;
-    color:teal;
-    flex-direction: column;
     justify-content: center;
     border-radius:10px;
 }
 .project h2{
     text-align: left;
     font-size: 55px;
+    text-shadow: 1px 1px 1px black;
+    color:teal;
+    margin:113.547px 10px 113.547px 0px;
 }
 
 
@@ -99,6 +131,7 @@ footer{
     border-left: 4px solid teal;
 }
 
+
 .run-buddy {
     flex: 0 0 400px;
 }
@@ -110,19 +143,23 @@ footer{
 
 .run-buddy:hover{
     color:teal;
-    border:2px solid teal;
+    border:5px solid teal;
     border-radius:10px;
-    font-size:30px;
 }
 
 .run-buddy a:hover{
     color:teal;
     text-decoration: underline;
+    font-size: 30px;
 }
 
 .run-buddy img {
     width: 100%;
     border-radius: 10px;
+}
+.run-buddy div img:hover{
+    opacity: 0.8;
+
 }
 
 section{
@@ -144,7 +181,7 @@ article{
 }
 
 .hero-cta{
-    margin: 0 2% 0 50%;
+    margin: 0 2% 0 60%;
     display:flex;
     flex-wrap: wrap;
     justify-content: right;
@@ -155,40 +192,61 @@ article{
     font-size: 60px;
     text-align: center;
     margin-top: 85px;
+    text-shadow: 2px 2px 2px teal;
 }
 
 .hero-cta p{
-    color:gray;
+    color:teal;
     flex-wrap: wrap;
 }
 
 .contact{
     display: flex;
-    width:100%
+    width:100%;
 }
 .contact div{
     width:100%;
     margin:auto;
     border-left: 4px solid teal;
+    float:right;
+    line-height: 2.0;
+    text-align:center;
 }
 
-.contact header{
+.contact caption{
     background-color: beige;
-    color:teal;
     flex-direction: column;
     justify-content: center;
 }
 .contact h2{
     text-align: center;
     font-size: 55px;
+    text-shadow: 1px 1px 1px black;
+    color:teal;
+    margin:auto;
 }
 .contact ul{
     padding: 1%;
     width:100%;
+
 }
 
 .contact ul li{
     display:inline-block;
     justify-content: center;
+    margin: 30px;
 }
+.contact a{
+    font-size: 23px;
+    margin-left: 5px;
+    text-decoration:none;
+    color:teal;
+}
+
+.contact a:hover{
+    font-size:30px;
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
 

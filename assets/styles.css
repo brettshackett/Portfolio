@@ -1,38 +1,93 @@
 *{
-    margin:0;
+
     box-sizing: border-box;
 }
 
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin:0;
+    display:inline-block;
+}
+
+header {
+    padding: 20px 35px;
+    background-color:black;
+    color:white;
+    display:flex;
+}
+
+header nav{
+    display: inline-block;
+    margin: 7px 0;
+}
+
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    margin: 0 30px;
+    font-size: 22px;
+    text-decoration:none;
+    color:white;
+}
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color:white;
+}
+
+.intro{
+    display:flex;
+}
+
+.intro header{
+    background-color: beige;
+    color:teal;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro h2{
+    text-align: center;
+    font-size: 55px;
+}
+
+.intro p{
+    text-align: center;
+    padding:5%;
+
+}
+.intro div{
+    border-left: 4px solid teal;
 }
 
 .project{
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 100%;
-    display: flex;
-
+    display:flex;
 }
 
+.project header{
+    background-color:white;
+    color:teal;
+    flex-direction: column;
+    justify-content: center;
+    border-radius:10px;
+}
 .project h2{
-    display: inline-block;
-    vertical-align: top;
     text-align: left;
-    margin: auto;
     font-size: 55px;
-    padding:inherit;
 }
 
 
 .project div{
-    width: 75%;
-    display: inline-block;
-    vertical-align: top;
     text-align: center;
-    margin: auto;
-    padding:1%;
-    font-weight:lighter
+}
+.project h3{
+    margin:0;
 }
 
 
@@ -43,96 +98,39 @@ body{
     border-left: 4px solid teal;
 }
 
-.list a h2:hover{
-    color:teal;
-}
 .run-buddy {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
     flex: 0 0 400px;
 }
-.run-buddy a h2{
+.run-buddy a{
     font-size: 25px;
     text-decoration: none;
     color: black;
 }
 
-.run-buddy a h2:hover{
-    font-size: 30px;
-    text-decoration: underline;
-    color: teal;
-}
 .run-buddy:hover{
     color:teal;
+    border:2px solid teal;
+    border-radius:10px;
+    font-size:30px;
+}
 
+.run-buddy a:hover{
+    color:teal;
+    text-decoration: underline;
 }
 
 .run-buddy img {
     width: 100%;
-}
-
-
-.text-right{
-    text-align:right;
-    width:auto;
-    padding: 10%;
-}
-
-header {
-    padding: 20px 35px;
-    background-color:black;
-    color:white;
-    font-weight:bold;
-    font-size: 55px;
-    margin:0;
-}
-
-header h1{
-    font-weight:bold;
-    font-size: 55px;
-    margin:0;
-    display: inline-block;
-}
-
-header nav{
-    float:right;
-    margin: 7px 0;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
-    text-decoration:none;
-    color:white;
+    border-radius: 10px;
 }
 
 section{
     padding: 2%;
+    background-color: beige;
 }
 
-
-footer{
-    background-color:black;
-    width:100%;
-    padding: 40px 35px;
-}
-footer h2{
-    display:inline;
-    color: white;
-    font-size: 20px;
-    margin: 0;
-}
-
-footer div{
-    float:center;
-    line-height: 0.75;
-    text-align:center;
+article{
+    padding:2%
 }
 
 .hero{
@@ -141,107 +139,54 @@ footer div{
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
+    flex-wrap: wrap;
 }
 
 .hero-cta{
-    margin: 5% 0 0 50%;
+    margin: 0 2% 0 50%;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
 }
 
 .hero-cta h2{
     color:white;
-    font-size: 55px;
-    text-align: right;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 85px;
 }
 
 .hero-cta p{
     color:gray;
-    margin: 5px 0 15px 0;
-    
-}
-
-.intro{
-    background-color:beige;
-}
-
-.intro div{
-    display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-.intro > *{
-    flex: 1;
-    margin: 15px;
+.contact{
+    display: flex;
+    width:100%
+}
+.contact div{
+    width:100%;
+    margin:auto;
+    border-left: 4px solid teal;
 }
 
-.intro h2{
-    width: max-content;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: auto;
+.contact header{
+    background-color: beige;
+    color:teal;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact h2{
+    text-align: center;
     font-size: 55px;
 }
-
-
-.intro p{
-    width: 75%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    margin: auto;
-    padding:1%;
-    border-left:4px solid teal;
-    font-weight:lighter
-}
-
-.project > *{
-    padding:inherit;
-    margin: 15px;
-}
-
-
-.contact{
-    background-color:beige;
-}
-
-.contact div{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact > *{
-    flex: 1;
-    margin: 15px;
-}
-
-.contact h2{
-    width:max-content;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: auto;
-    font-size:55px;
-}
-
 .contact ul{
-    width:75%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
     padding: 1%;
-    margin: auto;
-    border-left: 4px solid teal;
+    width:100%;
 }
 
 .contact ul li{
     display:inline-block;
-    margin: 0 30px;
-    font-weight: lighter;
-    font-size: 22px;
-    text-decoration:none;
+    justify-content: center;
 }
 

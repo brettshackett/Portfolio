@@ -1,11 +1,16 @@
-# Portfolio
-This is for the second week activity challenge, building a professional portfolio.
+# Brett Shackett's Portfolio
 
-I have created my professional portfolio which includes projects that I have completed and the information regarding contacting me. This is will continue to be changed and updated as I complete more projects.
-<<<<<<< HEAD
-<<<<<<< HEAD
+Projects will continuously be added as they are finising up.
 
-=======
->>>>>>> cf8d0594506d23df3a50a4bf0266ab9b41bfd6ae
-=======
->>>>>>> 72c5302dc3a8ac1c20a951c2febf11bde4918ced
+## Recently Added
+- <a href="https://morning-fortress-48397.herokuapp.com/">Nook</a>
+
+![Nook](./assets/images/nook.jpg)
+
+Nook is a blog that allows you to interact with other users, you have the ability to log-in, post, add images, categorize posts and more. This was a successful project and has all the working features to handle users. 
+
+This application was completed by myself and 3 other developers as part of the Columbia University Coding Bootcamp.
+
+## Contact me:
+  - [Email](mailto:shackettbrett@gmail.com)
+  - <a href="www.linkedin.com/in/brett-shackett">LinkedIn</a> 
